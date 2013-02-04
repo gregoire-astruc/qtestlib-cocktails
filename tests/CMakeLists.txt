@@ -27,5 +27,5 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR}/src)
 QT4_WRAP_CPP(MOC_SRCS ${MOC_HEADERS})
 QT4_WRAP_CPP(MOC_TESTS ${TEST_SRCS})
 
-add_executable(${PROJECT_NAME} ${SOURCES} ${MOC_SRCS} ${TEST_SRCS})
+add_executable(${PROJECT_NAME} ${SOURCES} ${MOC_SRCS} ${TEST_SRCS} ${MOC_TESTS})
 target_link_libraries(${PROJECT_NAME} ${QT_LIBRARIES})
