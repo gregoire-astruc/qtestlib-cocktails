@@ -1,0 +1,8 @@
+language: cpp
+install:
+  - sudo apt-get update
+  - sudo apt-get install libqt4-dev qt4-qmake cmake
+
+script:
+  - cmake -DCMAKE_BUILD_TYPE=Debug
+  - make
