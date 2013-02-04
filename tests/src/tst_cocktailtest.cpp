@@ -45,4 +45,4 @@ void CocktailTest::testName_data()
 
 QTEST_APPLESS_MAIN(CocktailTest)
 
-#include "moc_tst_cocktailtest.cxx"
+#include "tst_cocktailtest.moc"
