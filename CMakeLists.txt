@@ -6,13 +6,16 @@ find_package(Qt4 REQUIRED)
 
 # Project files
 set(SOURCES
+    src/cocktail.cpp
 )
 
 set(HEADERS
-    include/test.h
+    include/cocktail.h
+    tests/test.h
 )
 
 set(MOC_HEADERS
+    include/cocktail.h
 )
 
 set(UIS

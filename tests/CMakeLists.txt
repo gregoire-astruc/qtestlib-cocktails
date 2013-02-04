@@ -7,11 +7,15 @@ set(QT_USE_QTTEST TRUE)
 
 # Project files
 set(SOURCES
+    ../src/cocktail.cpp
 )
 
 set(MOC_HEADERS
+    ../include/cocktail.h
 )
+
 set(TEST_SRCS
+    src/tst_cocktailtest.cpp
 )
 
 include(${QT_USE_FILE})
