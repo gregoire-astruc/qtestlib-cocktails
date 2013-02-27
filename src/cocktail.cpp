@@ -7,7 +7,7 @@ Cocktail::Cocktail(const QString &name, QObject *parent) :
 
 void Cocktail::setName(const QString &name)
 {
-    if (name_ != name_) {
+    if (name_ != name) {
         name_ = name;
     }
 }
