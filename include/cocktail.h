@@ -16,6 +16,9 @@ public:
 public slots:
     void setName(const QString &);
 
+signals:
+    void nameChanged(QString);
+
 protected:
     QString name_;
 };

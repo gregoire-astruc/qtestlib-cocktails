@@ -9,5 +9,6 @@ void Cocktail::setName(const QString &name)
 {
     if (name_ != name) {
         name_ = name;
+        emit nameChanged(name_);
     }
 }
