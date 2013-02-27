@@ -16,12 +16,13 @@ set(MOC_HEADERS
 
 set(TEST_SRCS
     src/tst_cocktailtest.cpp
+    src/tst_cocktailformtest.cpp
 )
 
 include(${QT_USE_FILE})
 add_definitions(${QT_DEFINITIONS})
 include_directories(${CMAKE_SOURCE_DIR} ${CMAKE_SOURCE_DIR}/.. include ../include ${CMAKE_CURRENT_BINARY_DIR})
-include_directories(${CMAKE_CURRENT_BINARY_DIR}/src)
+include_directories(${CMAKE_CURRENT_BINARY_DIR}/src ${CMAKE_CURRENT_BINARY_DIR}/..)
 
 #QT4_WRAP_UI(UI_HEADERS ${UIS})
 QT4_WRAP_CPP(MOC_SRCS ${MOC_HEADERS})

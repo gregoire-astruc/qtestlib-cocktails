@@ -5,20 +5,27 @@ project(QTestLibCocktails)
 find_package(Qt4 REQUIRED)
 
 # Project files
-set(SOURCES
-    src/cocktail.cpp
-)
-
 set(HEADERS
     include/cocktail.h
+    include/cocktailform.h
     tests/test.h
 )
 
+set(SOURCES
+    src/cocktail.cpp
+    src/cocktailform.cpp
+    src/main.cpp
+    ${HEADERS}
+)
+
+
 set(MOC_HEADERS
     include/cocktail.h
+    include/cocktailform.h
 )
 
 set(UIS
+    ui/cocktailform.ui
 )
 
 include(${QT_USE_FILE})
