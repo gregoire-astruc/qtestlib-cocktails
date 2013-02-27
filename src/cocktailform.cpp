@@ -10,9 +10,15 @@ CocktailForm::CocktailForm(QWidget *parent) :
 {
     ui->setupUi(this);
     connect(ui->nameLineEdit, SIGNAL(textChanged(QString)), cocktail_, SLOT(setName(QString)));
+    connect(ui->LongIslandLoadPushButton, SIGNAL(clicked()), this, SLOT(setLongIsland()));
 }
 
 CocktailForm::~CocktailForm()
 {
     delete ui;
+}
+
+void CocktailForm::setLongIsland()
+{
+    cocktail_->setName("Long Island");
 }

@@ -21,6 +21,9 @@ public:
     ~CocktailForm();
     Cocktail *cocktail() const { return cocktail_; }
 
+private slots:
+    void setLongIsland();
+
 private:
     Ui::CocktailForm *ui;
     Cocktail *cocktail_;
