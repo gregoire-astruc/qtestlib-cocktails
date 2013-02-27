@@ -6,4 +6,4 @@ install:
 script:
   - cmake -DCMAKE_BUILD_TYPE=Debug
   - make
-  - ./QTestLibCocktailsTests
+  - ./QTestLibCocktailsTest
