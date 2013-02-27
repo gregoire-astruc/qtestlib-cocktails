@@ -1,24 +1,12 @@
+#include "tst_cocktailformtest.h"
+
 #include <QtCore/QString>
-#include <QtTest/QtTest>
-#include <QtCore/QCoreApplication>
-#include <QSignalSpy>
+#include <QtTest/QTest>
+#include <QtTest/QSignalSpy>
 
 #include "ui_cocktailform.h"
 #include "cocktail.h"
 #include "cocktailform.h"
-
-class CocktailFormTest : public QObject
-{
-    Q_OBJECT
-
-public:
-    CocktailFormTest();
-
-private Q_SLOTS:
-    void testName();
-    void testName_data();
-    void testLoad();
-};
 
 CocktailFormTest::CocktailFormTest()
 {
@@ -43,8 +31,3 @@ void CocktailFormTest::testLoad()
 
     QCOMPARE(form.cocktail()->name(), QString("Long Island"));
 }
-
-QTEST_MAIN(CocktailFormTest)
-
-#include "tst_cocktailformtest.moc"
-

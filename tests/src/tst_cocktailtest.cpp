@@ -1,20 +1,9 @@
+#include "tst_cocktailtest.h"
 #include <QtCore/QString>
-#include <QtTest/QtTest>
-#include <QSignalSpy>
+#include <QtTest/QTest>
+#include <QtTest/QSignalSpy>
 
 #include "cocktail.h"
-
-class CocktailTest : public QObject
-{
-    Q_OBJECT
-
-public:
-    CocktailTest();
-
-private Q_SLOTS:
-    void testName();
-    void testName_data();
-};
 
 CocktailTest::CocktailTest()
 {
@@ -42,7 +31,3 @@ void CocktailTest::testName_data()
     QTest::addColumn<QString>("name");
     QTest::newRow("Long island") << "Long island";
 }
-
-QTEST_APPLESS_MAIN(CocktailTest)
-
-#include "tst_cocktailtest.moc"
