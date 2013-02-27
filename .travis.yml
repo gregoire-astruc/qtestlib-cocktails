@@ -4,7 +4,6 @@ install:
   - sudo apt-get -qq install libqt4-dev qt4-qmake cmake
 
 script:
-  - cd tests
   - cmake -DCMAKE_BUILD_TYPE=Debug
   - make
   - ./QTestLibCocktailsTests
