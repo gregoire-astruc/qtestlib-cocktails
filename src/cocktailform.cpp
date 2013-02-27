@@ -9,6 +9,7 @@ CocktailForm::CocktailForm(QWidget *parent) :
     cocktail_(new Cocktail("Default"))
 {
     ui->setupUi(this);
+    connect(ui->nameLineEdit, SIGNAL(textChanged(QString)), cocktail_, SLOT(setName(QString)));
 }
 
 CocktailForm::~CocktailForm()
